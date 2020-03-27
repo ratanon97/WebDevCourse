@@ -9,11 +9,9 @@ body{
   p{
     color:#66BFBF;
   }
-  /*
   img{
       background-color: red;
   }
-  */
   /*********TAG SELECTOR************/
   .bacon{
       background-color: red;
@@ -21,3 +19,12 @@ body{
   .broccoli{
       background-color: blue;
   }
+
+   /*********ID SELECTOR************/
+   #heading{
+    color: purple;
+    }
+    /*********PSEUDO CLASS SELECTOR************/
+    img:hover{
+        background-color: greenyellow;
+    }
