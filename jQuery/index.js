@@ -6,9 +6,9 @@
 // }
 
 //jQuery Version
-// $("button").click(function(){
-//     $("h1").css("color","purple");
-// })
+ $("button").click(function(){
+     $("h1").css("color","purple");
+ })
 
 $(document).keydown(function(event){
 $("h1").text(event.key);
