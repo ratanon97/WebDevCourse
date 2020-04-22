@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <!-- Custom styles for this template -->
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>It's a <%= kindOfDay %>!</h1>
+    <div class="box" id="heading">
+        <h1><%= kindOfDay %> To Do List!</h1>
+    </div>
+    <div class="box">
+    <% for (let i = 0; i<newListItems.length;i++){ %>
+        <div class="item">
+            <input type="checkbox">
+            <p><%= newListItems[i] %><p>
+        </div>
+        <% } %>
+        <form class= "item" action="/" method="post"></form>
+            <input type="text" name="newItem" placeholder= "New Item" autocomplete="off">
+            <button type="submit" name="button">+</button>
+        </form>
+    </div>
+   
 </body>
 </html>
